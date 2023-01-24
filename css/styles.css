@@ -21,7 +21,6 @@ body {
 
 @media (min-width: 650px) {
   .wrapper {
-    height: 100vh;
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
       "header  header"
@@ -33,8 +32,6 @@ body {
 
 @media (min-width: 1000px) {
     .wrapper {
-      /*cambio para centrar grid*/
-      height: 100vh;
       justify-content:center;
       grid-template-columns: 245px 60vw;
       grid-template-areas:
@@ -60,7 +57,6 @@ body {
   background: linear-gradient(to right, #0b0c10, #3b4450);
   border:2px solid #c5c6c7;
   padding: 35px;
-  width: auto;
   box-shadow: 5px 5px 10px #66fcf1;
 }
 
