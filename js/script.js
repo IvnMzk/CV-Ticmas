@@ -23,7 +23,7 @@ imagenes[1] = "imagenes/reseña2.jpg"
 imagenes[2] = "imagenes/reseña3.jpg"
 	
 //Funcion para cambiar imagenes
-function cambiarImagen(){
+function cambiarReseña(){
   document.slide.src = imagenes[i];
 	if(i < imagenes.length - 1){
 	  i++;
@@ -31,10 +31,10 @@ function cambiarImagen(){
   else {
 	  i = 0;
 }
-setTimeout("cambiarImagen()", espera);
+setTimeout("cambiarReseña()", espera);
 }
 
-window.onload = cambiarImagen;
+window.onload = cambiarReseña;
 
 //ZOOM WEBS
 document.querySelectorAll(".image-container img").forEach(image =>{
