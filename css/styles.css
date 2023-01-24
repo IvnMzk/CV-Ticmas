@@ -5,7 +5,7 @@
 }
 body {
   background: linear-gradient(to right, #0b0c10, #3b4450);
-  font-family:"Poppins", 'Roboto', sans-serif;
+  font-family:'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -43,7 +43,6 @@ body {
         "sidebar content"
         "footer  footer";
     }
-
   }
 
 .main-head {
@@ -299,14 +298,8 @@ h4{
   transform: translate(-50%, -50%);
   border: 5px solid #c5c6c7;
   border-radius: 5px;
-  width: 950px;
+  width: 95%;
   object-fit: cover;
-}
-
-@media (max-width: 950px){
-  .port-container .popup-image img{
-    width: 95%;
-  }
 }
 
 .port-container .review-container{
@@ -334,6 +327,7 @@ h4{
   font-size: 20px;
   padding: 20px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .hyperlink{color: #66fcf1}

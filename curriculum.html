@@ -10,7 +10,9 @@
     <title>Curriculum Vitae</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9192f6f463.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
@@ -18,86 +20,13 @@
 </head>
 <body>
    <!--Inicio grid-->
-  <div class="wrapper">
-    <header class="main-head">
-      <h1>Cory Schmidt</h1>
-      <h2>Diseñador web - Desarrollador</h2>
+    <header style="height: 250px; border-bottom: none;" class="main-head">
+      <img style="float: left" id="mugshot" src="imagenes/frente.jpg" alt="Imagen personal">
+      <h1 style="margin: 50px; padding-left: 155px;">Cory Schmidt</h1>
+      <h2 style="margin-top: -36px; padding-left: 204px;">Diseñador web - Desarrollador</h2>
+      
     </header>
-    <article class="content">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" data-bs-toggle="tab" href="#educacion"><i class="fa-solid fa-school"></i> Educacion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" href="#experienciaLaboral"><i class="fa-solid fa-briefcase"></i> Experiencia Laboral</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
-        </li>
-      </ul>
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div class="tab-pane container active" id="educacion">
-          <dl>
-            <dt class="fecha">2006 - 2008</dt>
-            <dd class="detalle">Programador Universitario</dd>
-            <dd class="compania">Universidad Nacional</dd>
-            <dd class="tema">Doctorado en Ciencias de la computación</dd>
-            <dt class="fecha">2005 - 2006</dt>
-            <dd class="detalle">Curso de programacion</dd>
-            <dd class="compania">W3schools</dd>
-            <dd class="tema">Programacion en Python</dd>			
-            <dt class="fecha">2004 - 2005</dt>
-            <dd class="detalle">Curso de desarrollo web</dd>
-            <dd class="compania">FreeCodeCamp</dd>
-            <dd class="tema">HTML, CSS y JavaScript</dd>
-          </dl>
-        </div>
-        <div class="tab-pane container fade" id="experienciaLaboral">
-          <dl>
-            <dt class="fecha">2013 - Presente</dt>
-            <dd class="detalle">Desarrollador Front-End</dd>
-            <dd class="compania">Google Inc.</dd>
-            <dd class="tema">Diseño, desarrollo y mantenimiento de paginas web.</dd>
-            <dt class="fecha">2011 - 2012</dt>
-            <dd class="detalle">Desarrolador Senior</dd>
-            <dd class="compania">Facebook inc.</dd>
-            <dd class="tema">Optimización de páginas web con las últimas tecnologias.</dd>			
-            <dt class="fecha">2009 - 2010</dt>
-            <dd class="detalle">Desarrollador Junior</dd>
-            <dd class="compania">Apple Inc.</dd>
-            <dd class="tema">Desarrollo y manteniemiento de Apps</dd>
-          </dl>            
-        </div>
-        <div class="tab-pane container fade" id="contacto">
-          <h4>Redes sociales</h4>
-          <div class="redesSociales">
-            <a target="_blank" href="https://facebook.com/"><i class="fa-brands fa-facebook iconoRedSocial"></i></a>
-            <a target="_blank" href="https://linkedin.com/"><i class="fa-brands fa-linkedin iconoRedSocial"></i></a>
-            <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter iconoRedSocial"></i></a>
-            <a href="mailto:ivan.mazurek@gmail.com"><i class="fa-sharp fa-solid fa-envelope iconoRedSocial"></i></a>
-          </div>
-          <h4>Formulario de contacto</h4>
-          <div class="container">
-            <form name="formulario"method="get" >
-              <label for="fullname">Nombre completo</label>
-              <input type="text" id="fullname" name="Fullname" placeholder="Ingresa tu nombre completo" required>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="Email" placeholder="Ingresa tu email" required>
-              <label for="asunto">Asunto</label>
-              <textarea id="asunto" name="asunto" placeholder="Ingresa tu consulta" style="height:100px" required></textarea>
-              <input type="submit" value="Enviar">
-            </form>
-          </div>
-        </div>
-      </div>
-    </article>
-    <aside class="side">
-      <div class="img">
-        <img id="mugshot" src="imagenes/frente.jpg" alt="Imagen personal">
-      </div>
-      <div class="img"><button id="cambioImagen" onclick="cambiarImagenPerfil()">Cambiar imagen</button>
-      </div>
+    <aside style="color: white; padding-left: 35px; padding-right: 35px; border-bottom: none;" class="side">
       <h3 id="aboutme">Acerca de mi</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iure esse odit velit facili na anim vitae.</p>
       <dl>
@@ -109,11 +38,42 @@
         <dd>gotica@gmail.com</dd>
       </dl>
     </aside>
-    <footer class="main-footer">
-      <a target="_blank" href="portfolio.html"><p class="hyperlink">Portfolio</p></a>
-      <!--<a href="#">Volver al inicio</a>--> 
-      <a class="hyperlink" href="link/curriculumVitae.pdf" download>Descargar curriculum en formato PDF</a>
-    </footer>
-  </div>  
+    <article style="padding-top: 0;" class="content">
+        <div">
+          <h2 style="font-style: normal;"><i class="fa-solid fa-school"></i> Educación</h3>
+          <dl>
+            <dt class="fecha">2006 - 2008</dt>
+            <dd class="detalle">Programador Universitario</dd>
+            <dd class="compania">Universidad Nacional</dd>
+            <dd style="color: white;" class="tema">Doctorado en Ciencias de la computación</dd>
+            <dt class="fecha">2005 - 2006</dt>
+            <dd class="detalle">Curso de programacion</dd>
+            <dd class="compania">W3schools</dd>
+            <dd style="color: white;" class="tema">Programacion en Python</dd>			
+            <dt class="fecha">2004 - 2005</dt>
+            <dd class="detalle">Curso de desarrollo web</dd>
+            <dd class="compania">FreeCodeCamp</dd>
+            <dd style="color: white;" class="tema">HTML, CSS y JavaScript</dd>
+          </dl>
+        </div>
+        <div id="experienciaLaboral">
+          <h2 style="font-style: normal;"><i class="fa-solid fa-briefcase"></i> Experiencia Laboral</h2>
+          <dl>
+            <dt class="fecha">2013 - Presente</dt>
+            <dd class="detalle">Desarrollador Front-End</dd>
+            <dd class="compania">Google Inc.</dd>
+            <dd style="color: white;" class="tema">Diseño, desarrollo y mantenimiento de paginas web.</dd>
+            <dt class="fecha">2011 - 2012</dt>
+            <dd class="detalle">Desarrolador Senior</dd>
+            <dd class="compania">Facebook inc.</dd>
+            <dd style="color: white;" class="tema">Optimización de páginas web con las últimas tecnologias.</dd>			
+            <dt class="fecha">2009 - 2010</dt>
+            <dd class="detalle">Desarrollador Junior</dd>
+            <dd class="compania">Apple Inc.</dd>
+            <dd style="color: white;" class="tema">Desarrollo y manteniemiento de Apps</dd>
+          </dl>            
+        </div>
+        </div>
+    </article>
 </body>
 </html>
