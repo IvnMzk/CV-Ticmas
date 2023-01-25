@@ -165,12 +165,9 @@ label{
   padding-bottom: 5px;
   }
 
-.hyperlink{color: #66fcf1}
-
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+.hyperlink{color: rgb(102, 252, 241)}
+.hyperlink:hover{color:rgba(102, 252, 241, .5)}
+.hyperlink:link { text-decoration: none; }
 
 
 h1{
