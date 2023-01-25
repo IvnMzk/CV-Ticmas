@@ -1,13 +1,40 @@
+/*GENERAL*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: linear-gradient(to right, #0b0c10, #3b4450);
   font-family:'Roboto', sans-serif;
 }
 
+h1{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #95efef;
+  text-shadow: 10px 10px rgba(125, 216, 237, 0.3);
+  margin: 0;
+}
+  
+h2{
+  margin-top: 20px;
+  font-size: 2rem;
+  font-style: italic;
+  color: #66fcf1;
+}
+
+h4{
+  color: #95efef;
+  margin-top: 5px;
+}
+
+/*
+=============== 
+INDEX
+===============
+*/
 .wrapper {
     display: grid;
     height: 100vh;
@@ -42,6 +69,7 @@ body {
     }
   }
 
+/*HEADER*/
 .main-head {
     grid-area: header;
     padding: 15px;
@@ -49,9 +77,19 @@ body {
     border: 3px solid #c5c6c7;
     border-radius: 0 0px 500px 0;
     box-shadow: 5px 5px 10px #66fcf1;
-
   }
 
+/*CONTENT*/
+/*NAV BAR*/
+.nav{
+  --bs-nav-link-color: #c5c6c7;
+  --bs-nav-link-hover-color: darkgrey;
+}
+
+.nav-tabs .nav-link.active {
+  color: #0b0c10;
+}
+/*MAIN CONTENT*/
 .content {
   grid-area: content;
   background: linear-gradient(to right, #0b0c10, #3b4450);
@@ -75,7 +113,6 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   color: #95efef;
-  
 }
 
 .compania{
@@ -86,15 +123,6 @@ body {
 .tema{
   border-bottom: 1px solid #66fcf1;
   color: #c5c6c7;
-}
-
-.nav{
-  --bs-nav-link-color: #c5c6c7;
-  --bs-nav-link-hover-color: darkgrey;
-}
-
-.nav-tabs .nav-link.active {
-  color: #0b0c10;
 }
 
 .contact-container {
@@ -149,6 +177,7 @@ label{
   color: #c5c6c7;
 }
 
+/*ASIDE*/
 .side{
   grid-area: sidebar;
   background: linear-gradient(to right, #0b0c10, #3b4450);
@@ -157,45 +186,14 @@ label{
   text-align: left;
   border: 2px solid #c5c6c7;
   box-shadow: 5px 5px 10px #66fcf1;  
-  }
-
-.main-footer {
-  font-size: 1.2rem;
-  grid-area: footer;
-  text-align: center;
-  padding-bottom: 5px;
-  }
-
-.hyperlink{color: rgb(102, 252, 241)}
-.hyperlink:hover{color:rgba(102, 252, 241, .5)}
-.hyperlink:link { text-decoration: none; }
-
-
-h1{
-  font-size: 4rem;
-  font-weight: bold;
-  color: #95efef;
-  text-shadow: 10px 10px rgba(125, 216, 237, 0.3);
-  margin: 0;
-  }
-  
-h2{
-  margin-top: 20px;
-  font-size: 2rem;
-  font-style: italic;
-  color: #66fcf1;
-  }
-
-h4{
-  color: #95efef;
-  margin-top: 5px;}
+}
 
 #mugshot {
   width: 130px;
   margin: 20px 10px;
   border-radius: 100%;
   border: 3px solid #66fcf1;
-  }
+}
 
 #cambioImagen{
   background-color: #0b0c10;
@@ -203,7 +201,6 @@ h4{
   border: 2px solid #66fcf1;
   padding: 6px 10px;
   border-radius: 10px;
-
 }
 
 #cambioImagen:hover {
@@ -220,13 +217,30 @@ h4{
   text-align: center;
   border-top: 1px solid #66fcf1;
   border-bottom: 1px solid #66fcf1;
-  }
+}
 
 .img{
   text-align: center;
   margin-bottom: 10px;
 }
 
+ /*FOOTER*/ 
+.main-footer {
+  font-size: 1.2rem;
+  grid-area: footer;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.hyperlink{color: rgb(102, 252, 241)}
+.hyperlink:hover{color:rgba(102, 252, 241, .5)}
+.hyperlink:link { text-decoration: none; }
+
+/*
+=============== 
+PORTFOLIO
+===============
+*/
 .port-container {
   position: relative;
   min-height: 100vh;
@@ -235,12 +249,21 @@ h4{
   box-shadow: 5px 5px 10px #66fcf1;
 }
 
+/*PORTFOLIO*/
 .port-container .image-container{
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
   padding: 10px;
+}
+
+.port-header{
+  padding: 30px;
+  border-bottom: 1px solid #66fcf1;
+  font-size: 2.5rem;
+  font-style: initial;
+  text-align: center;
 }
 
 .port-container .image-container .image{
@@ -296,18 +319,11 @@ h4{
   object-fit: cover;
 }
 
+/*RESEÑAS*/
 .port-container .review-container{
   display: flex;
   justify-content: center;
   padding: 10px;
-}
-
-.port-header{
-  padding: 30px;
-  border-bottom: 1px solid #66fcf1;
-  font-size: 2.5rem;
-  font-style: initial;
-  text-align: center;
 }
 
 #reseña{
@@ -317,6 +333,7 @@ h4{
   border: 3px solid #c5c6c7;
 }
 
+/*FOOTER*/
 .port-footer{
   font-size: 1.2rem;
   padding: 20px;
